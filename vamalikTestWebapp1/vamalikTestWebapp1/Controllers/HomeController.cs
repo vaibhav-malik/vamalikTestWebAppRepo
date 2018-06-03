@@ -23,6 +23,11 @@ namespace vamalikTestWebapp1.Controllers
             return View("Index", model);
         }
 
+        public IActionResult Test()
+        {
+            throw new InvalidOperationException("Sorry, this feature is not supported.");
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
